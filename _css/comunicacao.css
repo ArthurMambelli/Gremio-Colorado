@@ -73,6 +73,8 @@ footer {
     }
 }
 form {
+    font-size: 16px;
+    font-weight: bold;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -3.5%;
@@ -85,8 +87,14 @@ form {
     justify-content: center;
     width: 40%;
     height: 400px;
+    h1{
+        margin-bottom: 10px;
+    }
 }
 
+label{
+    margin-bottom: 10px;
+}
 input{
     border-radius: 5px;
     border: 1px solid #121211;

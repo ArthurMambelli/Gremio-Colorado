@@ -88,6 +88,7 @@ main {
 }
 
 .slider{
+    border: 2px solid #121211;
     margin: 0 auto;
     width: 800px;
     height: 400px;
@@ -188,4 +189,18 @@ será dada como 0, em relação ao primeiro elemento, ou seja, mostrará a prime
 }
 #radio4:checked ~ .navigation-auto .auto-btn4 {
     background-color: #E5322A;
+}
+
+#comunicacao{
+    background-color: #CFB645;
+    text-decoration: none;
+    border: 1px solid #121211;
+    color: #121211;
+    margin-right: 40px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#comunicacao:hover{
+    background-color: #d9bc3f;
 }
