@@ -1,111 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Gremio Colorado - Home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-    <link rel="icon" type="image/png" sizes="16x16"  href="_img/favicon-16x16.png">
-    <style>
-        *{
-            margin: 0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        body{
-            background-image: linear-gradient(to bottom, #D5D3CA 10%, #FFFFFF);
-        }
-        h1{
-            font-size: 2.51vh;
-            font-weight: bold;
-        }
-        header{
-    background-color: #121221;
-    display: flex;
-    height: 12vh;
-    margin-bottom: 5vh;
-    justify-content: space-around;
-    button{
-        color: #121211;
-        background-color: #CFB645;
-        font-size: 2.51vh;
-        margin-top: 3.5vh;
-        display: block;
-        padding: 0.36vw;
-        height: 5.50vh;
-        width: 10.41vw;
-        border: none;
-        cursor: pointer;
-        border-radius: 10px;
-        transition: all 0.3s;
-        font-weight: bold;
-    }
-    button:hover{
-        transform: scale(1.05);
-    }
-    a{
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-        color: #D5D3CA;
-        justify-content: center;
-        cursor: pointer;
-        
-    }
-    h1{
-        transition: all 0.3s;
-    }
-    h1:hover{
-        transform: scale(1.05);
-    }
-}
-
-        footer{
-            display: flex;
-            background-color: #121211;
-            color: #D5D3CA;
-            height: 8vh;
-            justify-content: space-around;
-            margin-top: 25vh;
-            p{
-                display: flex;
-                align-items: center;
-            }
-        }
-
-        div {
-            background-color: #121211;
-            width: 70vw;
-            height: 65vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;    
-            margin-left: 15.5vw;
-            h1{
-                display: flex;
-                justify-content: center;
-                color: #D5D3CA;
-            }
-            img{
-                width: 550px;
-                height: 500px;
-            }
-        }
-
-        main {
-            margin-top: 12vh;
-            margin-left: 15vw;
-            margin-right: 12vw;
-            p{
-                margin-bottom: 5vh;
-            }
-            h1{
-                margin-bottom: 1vh;
-            }
-        }
-    </style>
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/home.css'>
+    <link rel="icon" type="image/png" sizes="16x16" href="_img/favicon-16x16.png">
 </head>
+
 <body>
     <header class="header">
         <img src="_img/gremio_colorado.jpg" alt="">
@@ -120,24 +24,77 @@
         </a>
         <button>Login/Cadastrar</button>
     </header>
-    <div>
-        <figure>
-            <img src="_img/Logo-Sem-Fundo.png" alt="">
-            <figcaption>
-                <h1>Gremio Colorado</h1>
-            </figcaption>
-        </figure>
+
+    <div class="divBody"> 
+    <div class="slider">
+
+        <div class="slides">
+
+            <!--Botões-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--Fim dos botões-->
+
+            <!--Imagens do slide-->
+            <div class="slide first">
+                <img src="_img/Img-Modelo.png" alt="Banner 1">
+            </div>
+            <div class="slide">
+                <img src="_img/Basquete-Img.jpg" alt="Banner 2">
+            </div>
+            <div class="slide">
+                <img src="_img/Futebol-Img.jpg" alt="Banner 3">
+            </div>
+            <div class="slide">
+                <img src="_img/Img-Modelo.png" alt="Banner 4">
+            </div>
+            <!--Fim das imagens do slide-->
+
+            <!--Navegação automática-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--Fim da navegação automática-->
+
+        </div>
+
+        <!--Navegação manual-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn" ></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--Fim da navegação manual-->
+
     </div>
+
+</div>
+
     <main>
         <h1>Quem somos nós?</h1>
-        <p>O Grêmio Colorado, uma jovem e vibrante fundação escolar, surgiu recentemente com o objetivo de dinamizar a vida acadêmica e social de sua escola. Com uma visão clara de promover a união e o engajamento entre os estudantes, o Grêmio tem se dedicado a divulgar suas atividades, eventos e projetos, buscando atrair a participação de um número cada vez maior de alunos.</p>
+        <p>O Grêmio Colorado, uma jovem e vibrante fundação escolar, surgiu recentemente com o objetivo de dinamizar a
+            vida acadêmica e social de sua escola. Com uma visão clara de promover a união e o engajamento entre os
+            estudantes, o Grêmio tem se dedicado a divulgar suas atividades, eventos e projetos, buscando atrair a
+            participação de um número cada vez maior de alunos.</p>
 
         <h1>O que temos feito?</h1>
-        <p>Desde sua criação, o Grêmio Colorado tem se empenhado em realizar uma variedade de atividades que vão desde festas temáticas, torneios esportivos, até palestras educativas. Através dessas iniciativas, a fundação não apenas oferece momentos de diversão, mas também promove o aprendizado e o desenvolvimento pessoal. As festividades são cuidadosamente planejadas para criar um ambiente acolhedor e inclusivo, onde todos se sintam à vontade para participar e expressar suas ideias.</p>
+        <p>Desde sua criação, o Grêmio Colorado tem se empenhado em realizar uma variedade de atividades que vão desde
+            festas temáticas, torneios esportivos, até palestras educativas. Através dessas iniciativas, a fundação não
+            apenas oferece momentos de diversão, mas também promove o aprendizado e o desenvolvimento pessoal. As
+            festividades são cuidadosamente planejadas para criar um ambiente acolhedor e inclusivo, onde todos se
+            sintam à vontade para participar e expressar suas ideias.</p>
     </main>
 
     <footer>
         <p>Todos os direitos reservados ©</p>
     </footer>
+    <script src='_js/home.js'></script>
 </body>
+
 </html>
